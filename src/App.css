@@ -1,0 +1,47 @@
+/* scroll bar style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 40px;
+}
+
+/* document parent style */
+body {
+  overflow-x: hidden;
+}
+
+main {
+  @apply relative z-50 bg-mode-dark
+}
+
+footer {
+  @apply relative z-10
+}
+/* geekfolio recommad max-width  1200px */
+.gf-container {
+  @apply max-w-[1200px] px-3 container mx-auto
+}
+
+.text-border {
+  -webkit-text-stroke: 1px white;
+}
+
+
+/* approach section start */
+.approach-section .swiper {
+  @apply !flex !justify-center
+}
+.approach-section .swiper .swiper-wrapper {
+  @apply w-auto
+}
+.approach-section .swiper-slide {
+  @apply text-white px-[50px] py-[70px] flex flex-col items-center border border-zinc-700 hover:border-shadow-orange rounded-[250px] -mx-[7px] transition-all duration-[0.4s] 
+}
+/* approach section end */
